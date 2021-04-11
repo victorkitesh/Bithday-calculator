@@ -29,7 +29,31 @@ function calculate(){
      
         saturday:"kwame",
     
-};
+    };
+    var akannamefemale ={
+        
+            sunday:"akosua",
+       
+        
+            monday:"adwoa",
+        
+        
+            tuesday:"abenna",
+         
+         
+            wenesday:"akua",
+         
+         
+            thursday:"yaa",
+         
+        
+            friday:"afua",
+         
+         
+            saturday:"ama",
+           
+    
+       };
 
     if(day<=0||day>31){
         alert("please enter valid day!");
@@ -46,28 +70,5 @@ function calculate(){
 }
 
 
-var akannamefemale =[
-    {
-        sunday:"akosua"
-    },
-    {
-        monday:"adwoa"
-    },
-    {
-        tuesday:"abenna"
-     },
-     {
-        wenesday:"akua"
-     },
-     {
-        thursday:"yaa"
-     },
-    {
-        friday:"afua"
-     },
-     {
-        saturday:"ama"
-     },  
 
-];
 
