@@ -1,3 +1,50 @@
+var akannamefemale ={
+        
+    sunday:"akosua",
+
+
+    monday:"adwoa",
+
+
+    tuesday:"abenna",
+ 
+ 
+    wenesday:"akua",
+ 
+ 
+    thursday:"yaa",
+ 
+
+    friday:"afua",
+ 
+ 
+    saturday:"ama",
+   
+
+};
+var akannamemale ={
+    
+    sunday:"kwasi",
+
+
+    monday:"kwando",
+
+
+    tuesday:"kwabena",
+
+
+    wenesday:"kwaku",
+ 
+ 
+    thursday:"yaw",
+ 
+ 
+    friday:"kofi",
+
+ 
+    saturday:"kwame",
+
+};
 function calculate(){
     var centuary= document.getElementById("cc").Value;
     var year= document.getElementById("yy").Value;
@@ -5,55 +52,10 @@ function calculate(){
     var day= document.getElementById("dd").Value;
     var gender= document.getElementById("gender").Value;
 
-    var dayoftheweek =( ( (cc/4) -2*cc-1) + ((5*yy/4) ) + ((26*(mm+1)/10)) + dd ) % 7;
+    var dayoftheweek =( ( (centuary/4) -2*centuary-1) + ((5*year/4) ) + ((26*(month+1)/10)) + day ) % 7;
 
-    var akannamemale ={
+   
     
-        sunday:"kwasi",
-    
-    
-        monday:"kwando",
-    
-
-        tuesday:"kwabena",
-    
-    
-        wenesday:"kwaku",
-     
-     
-        thursday:"yaw",
-     
-     
-        friday:"kofi",
-    
-     
-        saturday:"kwame",
-    
-    };
-    var akannamefemale ={
-        
-            sunday:"akosua",
-       
-        
-            monday:"adwoa",
-        
-        
-            tuesday:"abenna",
-         
-         
-            wenesday:"akua",
-         
-         
-            thursday:"yaa",
-         
-        
-            friday:"afua",
-         
-         
-            saturday:"ama",
-           
-    
-       };
 
     if(day<=0||day>31){
         alert("please enter valid day!");
@@ -64,8 +66,12 @@ function calculate(){
         alert("please enter valid day!");
     }
     else if (dayoftheweek=0&&gender=male){
-        return("akan name is"+.akannamemale[o])
+        console.log(("akan name is"+akannamemale.sunday)
     }
+    else if (dayoftheweek=1 && gender=male){
+        console.log("akan name is"+akannamemale.sunday)
+    }
+    else if(dayoftheweek)
    
 }
 
