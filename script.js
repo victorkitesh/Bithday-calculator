@@ -1,10 +1,10 @@
 let maleNames = ["Kwasi", "Kwadwo", "Kwabena", "Kwaku", "Yaw", "Kofi", "Kwame"];
 let femaleNames = ["Akosua", "Adwoa", "Abenaa", "Akua", "Yaa", "Afua", "Ama"];
 function getBirthday() {
-    let dateString = document.getElementById('bdate').value;
+    let dateString = document.getElementById('birthdate').value;
     if (!!dateString.valueOf() === true) {
         let bday = new Date(dateString);
-        let d = bday.getDay();
+        let d = birthdate.getDay();
         return d;
     } else {
         alert("Please select your birthday!")
@@ -27,13 +27,13 @@ function getGender() {
 }
 function computeName() {
     let gender = getGender();
-    let bday = getBirthday();
+    let birthdate = getBirthday();
     let result;
     if (gender === 0) {
-        result = maleNames[bday];
+        result = maleNames[birthdate];
         document.getElementById('result').innerHTML = "Your Akan name is " + result + "."
     } else if (gender === 1) {
-        result = femaleNames[bday];
+        result = femaleNames[birthdate];
         document.getElementById('result').innerHTML = "Your Akan name is " + result + "."
     }
 }
