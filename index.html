@@ -4,7 +4,7 @@
       <meta charset="UTF-8" />
       <meta http-equiv="X-UA-Compatible" content="IE=edge" />
       <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-      <title>Stella</title>
+      <title>calculator</title>
     </head>
     <body>
         <h1>Akan Names</h1>
@@ -16,14 +16,14 @@
             to the day in the week they were born. 
         </p>
         <form id="form">
-            <label for="birthday">Enter your birthday.</label><br>
-            <input type="date" name="birthday" id="bithday" oninput="clearOutput()"><br>
-            <label for="gender">Select your gender.</label><br>
-            <input type="radio" name="gender" id="male" oninput="clearOutput()">Male <br>
-            <input type="radio" name="gender" id="female" oninput="clearOutput()">Female <br>
-            <button type="button" onclick="computeName()">Submit</button>
-        </form>
-        <h3 id="result"></h3>
-        <script src="script.js"></script>
-    </body>
+          <label for="birthday">Enter your birthday.</label><br>
+          <input type="date" name="birthday" id="bdate" oninput="clearOutput()"><br>
+          <label for="gender">Select your gender.</label><br>
+          <input type="radio" name="gender" id="male" oninput="clearOutput()">Male <br>
+          <input type="radio" name="gender" id="female" oninput="clearOutput()">Female <br>
+          <button type="button" onclick="computeName()">Submit</button>
+      </form>
+      <h3 id="result"></h3>
+      <script src="script.js"></script>
+  </body>
 </html>

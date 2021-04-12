@@ -6,17 +6,16 @@ VICTOR KITEME
 caculates your akan name depending on the day you were born
 ##behavior driven development
 1.Display form
-INPUTE:user's bithday centuary
 INPUTE:user's bithday month
-INPUTE:user's bithday day
+INPUTE:user's bithday date
 INPUTE:user's bithday year
 INPUTE:user's bithday gender
-2.Display anerrormessageif date input left blank
+2.Display anerrormessageif month input left blank
 INPUTE:""
-OUTPUT:"please enter valid Date!"
-3.Display anerrormessageif MONTH input left blank
+OUTPUT:"Please select your birthday!"
+3.Display anerrormessageif gender input left blank
 INPUTE:""
-OUTPUT:"please enter valid month!"
+OUTPUT:"Please select your birthday!"
 
 
 
